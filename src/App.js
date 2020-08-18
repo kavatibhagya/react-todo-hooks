@@ -24,6 +24,12 @@ export default function App() {
     setTodo("");
   };
 
+  const removeTodo = (todoId) => {
+    const filteredList = todos.filter((item) => item.id !== todoId);
+
+    setTodos([...filteredList]);
+  };
+
   return (
     <div className="container">
       <form onSubmit={addTodo}>
@@ -35,7 +41,10 @@ export default function App() {
         <p> Todo List </p>
         <ul>
           {todos.map((item) => (
-            <li key={item.id}>{item.text}</li>
+            <li key={item.id}>
+              <span>{item.text}</span>
+              <button onClick={() => removeTodo(item.id)}>Remove</button>
+            </li>
           ))}
         </ul>
       </div>
