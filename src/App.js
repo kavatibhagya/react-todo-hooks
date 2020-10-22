@@ -33,12 +33,16 @@ export default function App() {
   return (
     <div className="container">
       <form onSubmit={addTodo}>
-        <label>Enter todo label</label>
+        <p>
+          <label>Enter todo label</label>
+        </p>
         <input type="text" onChange={inputChange} value={todo} />
-        <button type="submit">Add Todo</button>
+        <p>
+          <button type="submit">Add Todo</button>
+        </p>
       </form>
       <div>
-        <p> Todo List </p>
+        <h2> Todo List </h2>
         <ul>
           {todos.map((item) => (
             <li key={item.id}>
