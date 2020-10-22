@@ -8,3 +8,20 @@
   padding: 20px;
   background-color: darkslategray;
 }
+
+.container button {
+  background-color: blueviolet;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.container ul li {
+  list-style-type: none;
+}
+
+.container ul li button {
+  margin-left: 20px;
+}
