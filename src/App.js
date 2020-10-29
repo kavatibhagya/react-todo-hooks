@@ -41,7 +41,7 @@ export default function App() {
           <button type="submit">Add Todo</button>
         </p>
       </form>
-      <div>
+      <div className="list">
         <h2> Todo List </h2>
         <ul>
           {todos.map((item) => (
